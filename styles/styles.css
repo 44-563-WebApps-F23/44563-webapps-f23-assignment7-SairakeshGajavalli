@@ -1,0 +1,21 @@
+#locations {
+    font-weight: bold;
+}
+
+#penalty {
+    font-style: italic;
+}
+
+#help {
+    color: blue;
+    cursor: pointer;
+    width: fit-content;
+}
+#help:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
