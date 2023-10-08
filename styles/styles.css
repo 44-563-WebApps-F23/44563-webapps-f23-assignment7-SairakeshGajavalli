@@ -22,3 +22,12 @@ img{
     width: 100px;
     height: 100px;
 }
+#button-1{
+    color: blue;
+    cursor: pointer;
+    width: fit-content;
+}
+#button-1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
