@@ -75,3 +75,20 @@ img{
     font-weight: bold;
     color: #7ccc6c
 }
+
+#btn-5{
+    background-color: #ffc107;
+    background-image: linear-gradient(to bottom, #ffc107 50%, #000000 50%);
+    color: #000;
+    background-size: 100% 200%;
+    transition: all .2s;
+    font-weight: bold;
+    font-family: cursive;
+    border: 0;
+}
+#btn-5:hover{
+    background-color: #000;
+    background-position: 0 -100%;
+    font-weight: bold;
+    color: #ffc107
+}

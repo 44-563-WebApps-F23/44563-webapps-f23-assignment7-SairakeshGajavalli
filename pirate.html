@@ -107,6 +107,8 @@
                 <div class="p-2"><img id="img-5-5" src="images/maps.jpg" alt="ship" onclick="check(24)"> </div>
             </div>
         </div>
+        <br>
+        <button type="button" id="btn-4" class="btn" onclick="newGame()">New Game</button>
     </div>
 
     <script>
@@ -118,8 +120,8 @@
         var checkCount = 0;
         var penalty = 0;
         var lastCheck = 0;
-        var treasureLocation = 5; //Math.floor(Math.random() * 25); or 5
-        var trapLocation = 18; //Math.floor(Math.random() * 25); or 18
+        var treasureLocation = Math.floor(Math.random() * 25);
+        var trapLocation = Math.floor(Math.random() * 25);
         var gameOver = false;
         function check(position) {
             var id = myids[position];
@@ -178,6 +180,10 @@
             } else{
                 myhelp.innerHTML = "Step Faster";
             }       
+        }
+
+        function newGame(){
+            location.reload();
         }
     </script>
 </body>

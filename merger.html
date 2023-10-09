@@ -4,12 +4,16 @@
 		<style>
 			.flex-container {
 				display: flex;  flex-direction:row;
-				background-color: red;
+				background-color: chocolate;
+				border-radius: 10px;
+				box-shadow: 0 0 6px 4px rgb(0 0 0 / 12%), 0px 0px 9px 3px rgb(0 0 0 / 24%);
 			}
 
 			.flex-container > div {  /*div children of the flex container*/
 				background-color: #f1f1f1; 
 				margin: 10px;  padding: 20px;  font-size: 30px;
+				border-radius: 15px;
+				box-shadow: 0 0 3px rgb(0 0 0 / 12%), 0px 0px 9px 3px rgb(0 0 0 / 24%);
 			}
 
 			/* Responsive layout */
@@ -32,7 +36,7 @@
 	<body>
 		<div class="container">
 			<h2>Sairakehs builds a merger</h2>
-			<input class="input-group-text" type="text" id="mytext"><br>
+			<input class="input-group-text" type="text" id="mytext" autofocus><br>
 			<div class="flex-container" id="target">
 				<div class="merger">row item 1</div>
 				<div class="merger">row item 2</div>
@@ -42,6 +46,7 @@
 			<button type="button" class="btn" id="btn-2" onclick="makeNewDiv()">Add end</button>
 			<button type="button" class="btn" id="btn-3" onclick="addFront()">Add Front</button>
 			<button type="button" class="btn" id="btn-4" onclick="remove()">Remove</button>
+			<button type="button" class="btn" id="btn-5" onclick="swap()">Swap</button>
 		</div>
 	</body>
 	<script>
@@ -69,6 +74,14 @@
 		element.className = "merger";
 		let container = document.getElementById('target');
 		container.insertBefore(element, container.firstChild);
+	}
+
+	function swap(){
+		let mergeItems = document.getElementsByClassName("merger")
+		let length = mergeItems.length
+		let item = Math.floor(Math.random()* length)
+		let randomNumber = mergeItems[item]
+		randomNumber.parentNode.insertBefore(randomNumber,randomNumber.parentNode.firstChild)	
 	}
 	</script>
 </html>	
