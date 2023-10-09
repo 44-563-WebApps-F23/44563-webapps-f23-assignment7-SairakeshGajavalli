@@ -26,7 +26,7 @@ img{
     text-decoration: underline;
     cursor: pointer;
 }
-#starttime{
+#btn-2{
     color: #000;
     background-color: #5bc2e7;
     background-image: linear-gradient(to bottom,#5bc2e7 50%,#000 50%);
@@ -34,14 +34,15 @@ img{
     transition: all .2s;
     font-weight: bold;
     font-family: cursive;
+    border: 0;
 }
-#starttime:hover{
+#btn-2:hover{
     background-color: #000;
     background-position: 0 -100%;
     font-weight: bold;
     color: #5bc2e7
 }
-#react{
+#btn-3{
     color: #d9d9d6;
     background-color: #222731;
     background-image: linear-gradient(to bottom,#222731 50%,#d9d9d6 50%);
@@ -49,10 +50,28 @@ img{
     transition: all .2s;
     font-weight: bold;
     font-family: cursive;
+    border: 0;
 }
-#react:hover{
+#btn-3:hover{
     background-color: #d9d9d6 ;
     background-position: 0 -100%;
     font-weight: bold;
     color: #222731;
+}
+
+#btn-4{
+    background-color: #7ccc6c;
+    background-image: linear-gradient(to bottom, #7ccc6c 50%, #000000 50%);
+    color: #000;
+    background-size: 100% 200%;
+    transition: all .2s;
+    font-weight: bold;
+    font-family: cursive;
+    border: 0;
+}
+#btn-4:hover{
+    background-color: #000;
+    background-position: 0 -100%;
+    font-weight: bold;
+    color: #7ccc6c
 }
