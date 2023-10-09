@@ -10,13 +10,8 @@ body{
 }
 
 #help {
-    color: blue;
-    cursor: pointer;
+    background-color: aquamarine;
     width: fit-content;
-}
-#help:hover{
-    text-decoration: underline;
-    cursor: pointer;
 }
 img{
     width: 100px;

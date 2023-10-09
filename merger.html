@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<style>
+			.flex-container {
+				display: flex;  flex-direction:row;
+				background-color: red;
+			}
+
+			.flex-container > div {  /*div children of the flex container*/
+				background-color: #f1f1f1; 
+				margin: 10px;  padding: 20px;  font-size: 30px;
+			}
+
+			/* Responsive layout */
+			@media (max-width: 600px) { 
+				.flex-container{
+					flex-direction:column;
+					background-color: green;
+				}
+			}
+		</style>
+		<title>My Merger page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Sairakehs builds a merger</h2>
+			<input type="text" id="input"><br><br>
+			<div class="flex-container" id="target">
+				<div class="merger">row item 1</div>
+				<div class="merger">row item 2</div>
+				<div class="merger">row item 3</div>
+			</div>
+			<p> Press the button to create an new element of type div and then add it to the container.</p>
+			<button type="button" onclick="makeNewDiv()">Add end</button>
+		</div>
+	</body>
+	<script>
+		
+	</script>
+</html>	
