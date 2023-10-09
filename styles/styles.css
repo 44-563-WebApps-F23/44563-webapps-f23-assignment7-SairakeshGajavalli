@@ -31,3 +31,33 @@ img{
     text-decoration: underline;
     cursor: pointer;
 }
+#starttime{
+    color: #000;
+    background-color: #5bc2e7;
+    background-image: linear-gradient(to bottom,#5bc2e7 50%,#000 50%);
+    background-size: 100% 200%;
+    transition: all .2s;
+    font-weight: bold;
+    font-family: cursive;
+}
+#starttime:hover{
+    background-color: #000;
+    background-position: 0 -100%;
+    font-weight: bold;
+    color: #5bc2e7
+}
+#react{
+    color: #d9d9d6;
+    background-color: #222731;
+    background-image: linear-gradient(to bottom,#222731 50%,#d9d9d6 50%);
+    background-size: 100% 200%;
+    transition: all .2s;
+    font-weight: bold;
+    font-family: cursive;
+}
+#react:hover{
+    background-color: #d9d9d6 ;
+    background-position: 0 -100%;
+    font-weight: bold;
+    color: #222731;
+}

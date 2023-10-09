@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My React page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>speed check by Sairakesh</h2>
+  <div class="input-group-text" id="target">Your time</div><br>
+  <div class="input-group-text" id="counter">Count</div><br>
+  <button type="button" id="starttime" class="btn">Start Timer</button>
+  <button type="button" id="react" class="btn" onclick="recordTime()">React</button>
+</div>
+<script>
+  var reactTime = undefined;
+  function recordTime(){
+    reactTime=Date.now();
+    console.log (`React time: ${reactTime}`);
+  }
+</script>
+</body>
+</html>
